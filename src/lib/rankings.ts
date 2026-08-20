@@ -43,6 +43,24 @@ export const periodLabels: Record<RankingPeriod, string> = {
 
 const baseUrl = import.meta.env.BASE_URL;
 
+function getSortableDateValue(date: string) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    return Date.parse(`${date}T00:00:00Z`);
+  }
+
+  const weekMatch = date.match(/^(\d{4})-W(\d{2})$/);
+  if (weekMatch) {
+    const year = Number(weekMatch[1]);
+    const week = Number(weekMatch[2]);
+    const jan4 = new Date(Date.UTC(year, 0, 4));
+    const jan4Day = jan4.getUTCDay() || 7;
+    const weekOneMonday = Date.UTC(year, 0, 4 - jan4Day + 1);
+    return weekOneMonday + (week - 1) * 7 * 24 * 60 * 60 * 1000;
+  }
+
+  return Date.parse(date) || 0;
+}
+
 function withBasePath(pathname: string) {
   const base = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
   const path = pathname.startsWith("/") ? pathname.slice(1) : pathname;
@@ -51,7 +69,7 @@ function withBasePath(pathname: string) {
 
 export async function getAllRankingPosts() {
   const posts = await getCollection("rankings");
-  return posts.sort((a, b) => b.data.date.localeCompare(a.data.date));
+  return posts.sort((a, b) => getSortableDateValue(b.data.date) - getSortableDateValue(a.data.date));
 }
 
 export async function getRankingPostsByCategory(category: RankingCategory) {

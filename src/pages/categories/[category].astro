@@ -29,16 +29,25 @@ const categoryPosts = posts.filter((post) => post.data.category === category);
     <p class="lead">按时间倒序查看该分类下发布的排行榜内容。</p>
   </section>
 
-  <section class="section">
-    <div class="grid">
+  <section class="section" aria-labelledby="category-list-title">
+    <div class="section-header">
+      <h2 id="category-list-title" class="section-title">全部榜单</h2>
+      <span>{categoryPosts.length} 篇</span>
+    </div>
+    <div class="ranking-list" role="list">
       {
         categoryPosts.map((post) => (
-          <a class="ranking-card" href={getPostUrl(post)}>
-            <h3>{post.data.title}</h3>
-            <p>{post.data.description}</p>
+          <a class="ranking-list-item" href={getPostUrl(post)} role="listitem">
+            <div class="date-block">
+              <span>{post.data.date}</span>
+              <small>{periodLabels[post.data.period]}</small>
+            </div>
+            <div class="item-main">
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+            </div>
             <div class="meta-row">
-              <span class="pill">{periodLabels[post.data.period]}</span>
-              <span class="pill">{post.data.date}</span>
+              <span class="pill">{categoryLabels[post.data.category]}</span>
             </div>
           </a>
         ))
@@ -50,5 +59,71 @@ const categoryPosts = posts.filter((post) => post.data.category === category);
 <style>
   .section {
     margin-top: 2rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-header span,
+  .date-block small {
+    color: var(--muted);
+  }
+
+  .ranking-list {
+    display: grid;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .ranking-list-item {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ranking-list-item:last-child {
+    border-bottom: 0;
+  }
+
+  .date-block {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .date-block span {
+    font-weight: 800;
+  }
+
+  .item-main h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.02rem;
+  }
+
+  .item-main p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  @media (max-width: 760px) {
+    .section-header,
+    .ranking-list-item {
+      align-items: flex-start;
+      grid-template-columns: 1fr;
+    }
+
+    .section-header {
+      flex-direction: column;
+    }
   }
 </style>

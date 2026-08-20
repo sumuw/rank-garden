@@ -10,8 +10,14 @@ import {
 } from "@/lib/rankings";
 
 const posts = await getAllRankingPosts();
-const latestPosts = posts.slice(0, 5);
+const latestPosts = posts.slice(0, 8);
 const categories = Array.from(new Set(posts.map((post) => post.data.category))) as RankingCategory[];
+const categoryCounts = categories.map((category) => ({
+  category,
+  count: posts.filter((post) => post.data.category === category).length,
+  latest: posts.find((post) => post.data.category === category)?.data.date
+}));
+const moreUrl = getCategoryUrl(categories[0] || "github");
 ---
 
 <BaseLayout title="Ranking Blog | 每日排行榜内容站">
@@ -31,33 +37,48 @@ const categories = Array.from(new Set(posts.map((post) => post.data.category))) 
     </div>
   </section>
 
-  <section class="section">
-    <h2 class="section-title">最新榜单</h2>
-    <div class="grid">
+  <section class="section category-section" aria-labelledby="category-title">
+    <div class="section-header">
+      <div>
+        <h2 id="category-title" class="section-title">分类</h2>
+        <p>按主题查看已发布的排行榜。</p>
+      </div>
+    </div>
+    <div class="category-strip" role="list">
       {
-        latestPosts.map((post) => (
-          <a class="ranking-card" href={getPostUrl(post)}>
-            <h3>{post.data.title}</h3>
-            <p>{post.data.description}</p>
-            <div class="meta-row">
-              <span class="pill">{categoryLabels[post.data.category]}</span>
-              <span class="pill">{periodLabels[post.data.period]}</span>
-              <span class="pill">{post.data.date}</span>
-            </div>
+        categoryCounts.map(({ category, count, latest }) => (
+          <a class="category-link" href={getCategoryUrl(category)} role="listitem">
+            <span>{categoryLabels[category]}</span>
+            <small>{count} 篇 · 最近 {latest}</small>
           </a>
         ))
       }
     </div>
   </section>
 
-  <section class="section">
-    <h2 class="section-title">分类</h2>
-    <div class="grid">
+  <section class="section" aria-labelledby="latest-title">
+    <div class="section-header">
+      <div>
+        <h2 id="latest-title" class="section-title">最新榜单</h2>
+        <p>按发布时间倒序排列。</p>
+      </div>
+      <a class="more-link" href={moreUrl}>更多</a>
+    </div>
+    <div class="ranking-list" role="list">
       {
-        categories.map((category) => (
-          <a class="ranking-card" href={getCategoryUrl(category)}>
-            <h3>{categoryLabels[category]}</h3>
-            <p>查看该分类下的所有日榜、周榜和月榜。</p>
+        latestPosts.map((post) => (
+          <a class="ranking-list-item" href={getPostUrl(post)} role="listitem">
+            <div class="date-block">
+              <span>{post.data.date}</span>
+              <small>{periodLabels[post.data.period]}</small>
+            </div>
+            <div class="item-main">
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+            </div>
+            <div class="meta-row">
+              <span class="pill">{categoryLabels[post.data.category]}</span>
+            </div>
           </a>
         ))
       }
@@ -109,6 +130,103 @@ const categories = Array.from(new Set(posts.map((post) => post.data.category))) 
     margin-top: 2rem;
   }
 
+  .category-section {
+    margin-top: 0;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-header p {
+    margin: 0.15rem 0 0;
+    color: var(--muted);
+  }
+
+  .category-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .category-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 3.25rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+  }
+
+  .category-link span {
+    font-weight: 700;
+  }
+
+  .category-link small,
+  .date-block small {
+    color: var(--muted);
+  }
+
+  .more-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.25rem;
+    padding: 0 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--blue);
+    background: var(--surface);
+    font-weight: 700;
+  }
+
+  .ranking-list {
+    display: grid;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .ranking-list-item {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr) auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ranking-list-item:last-child {
+    border-bottom: 0;
+  }
+
+  .date-block {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .date-block span {
+    font-weight: 800;
+  }
+
+  .item-main h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.02rem;
+  }
+
+  .item-main p {
+    margin: 0;
+    color: var(--muted);
+  }
+
   @media (max-width: 760px) {
     .hero {
       grid-template-columns: 1fr;
@@ -116,6 +234,16 @@ const categories = Array.from(new Set(posts.map((post) => post.data.category))) 
 
     .hero-visual {
       height: 120px;
+    }
+
+    .section-header,
+    .ranking-list-item {
+      align-items: flex-start;
+      grid-template-columns: 1fr;
+    }
+
+    .section-header {
+      flex-direction: column;
     }
   }
 </style>
