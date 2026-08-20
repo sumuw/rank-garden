@@ -91,6 +91,24 @@ function assertRankingData(frontmatter, ranking, filePath) {
         throw new Error(`${filePath}: item rank ${item.rank} missing "${key}"`);
       }
     }
+
+    if (item.stars !== undefined && typeof item.stars !== "number") {
+      throw new Error(`${filePath}: item rank ${item.rank} stars must be a number`);
+    }
+
+    if (item.tags !== undefined) {
+      if (!Array.isArray(item.tags)) {
+        throw new Error(`${filePath}: item rank ${item.rank} tags must be an array`);
+      }
+
+      if (item.tags.length > 5) {
+        throw new Error(`${filePath}: item rank ${item.rank} tags must have at most 5 items`);
+      }
+    }
+
+    if (item.comment !== undefined && typeof item.comment !== "string") {
+      throw new Error(`${filePath}: item rank ${item.rank} comment must be a string`);
+    }
   });
 }
 

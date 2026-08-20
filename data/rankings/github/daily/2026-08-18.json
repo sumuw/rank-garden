@@ -1,0 +1,185 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-18",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
+      "language": "Python",
+      "delta": "",
+      "tags": [
+        "AI视频",
+        "自动化",
+        "短视频",
+        "内容创作",
+        "AIGC"
+      ],
+      "comment": "连续两日霸榜第一，是当前 AI 短视频流水线最成熟的开源方案之一。集成文案生成、配音、素材匹配、剪辑全流程，对自媒体创作者非常友好。产品化程度极高，README 直接面向\"零代码也能跑\"的用户，门槛低、输出稳定，是少数能\"开箱即用\"批量产出短视频的项目。"
+    },
+    {
+      "rank": 2,
+      "name": "cordiverse/cordis",
+      "url": "https://github.com/cordiverse/cordis",
+      "description": "Meta-Framework of Spatiotemporal Composability（时空组合性的元框架）。",
+      "language": "TypeScript",
+      "delta": "",
+      "tags": [
+        "元框架",
+        "时空数据",
+        "组合性",
+        "TypeScript",
+        "基建"
+      ],
+      "comment": "今日最大\"黑马\"，单日 +957 涨粉近 17%，绝对值不算最高但增速惊人。Koishi 团队出品的元框架，强调\"时间+空间\"维度的可组合性，适合需要复杂插件/事件编排的场景，对游戏服务器、IoT 编排、复杂 Bot 框架的开发者值得关注。"
+    },
+    {
+      "rank": 3,
+      "name": "usestrix/strix",
+      "url": "https://github.com/usestrix/strix",
+      "description": "Open-source AI penetration testing tool to find and fix your app's vulnerabilities.",
+      "language": "Python",
+      "delta": "",
+      "tags": [
+        "AI安全",
+        "渗透测试",
+        "漏洞扫描",
+        "DevSecOps",
+        "Python"
+      ],
+      "comment": "开源 AI 渗透测试工具，正面回应近期 Wiz 团队\"AI 代理会写漏洞\"的行业讨论——\"AI 代理也能找漏洞\"。把传统渗透测试流程 AI 化，能自动识别 Web 应用的漏洞并给出修复建议，是 AI+安全领域的实用派项目，企业安全团队可重点关注。"
+    },
+    {
+      "rank": 4,
+      "name": "agalwood/Motrix",
+      "url": "https://github.com/agalwood/Motrix",
+      "description": "A full-featured download manager（全功能下载管理器）。",
+      "language": "TypeScript",
+      "delta": "",
+      "tags": [
+        "下载工具",
+        "桌面应用",
+        "Electron",
+        "BT下载",
+        "工具"
+      ],
+      "comment": "经典老牌项目再次回榜。Motrix 是 Windows/macOS/Linux 三端覆盖的全功能下载管理器，支持 HTTP/HTTPS/FTP/BT/磁力链，UI 干净、无广告。在 uTorrent、迅雷等老牌工具\"作恶\"越来越多的今天，这类清爽的开源下载器依然有稳定的市场需求。"
+    },
+    {
+      "rank": 5,
+      "name": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "description": "Open-source AI job search：自动扫描招聘网站、用 A-F 评分体系评估岗位、定制简历、跟踪求职流程。",
+      "language": "JavaScript",
+      "delta": "",
+      "tags": [
+        "AI求职",
+        "简历优化",
+        "工具",
+        "LLM应用",
+        "求职"
+      ],
+      "comment": "把 AI 落地到\"找工作\"这个真实痛点上。能在 Claude Code / Codex / OpenCode 等 CLI 中本地运行，自动扫岗位、A-F 评分、定制 CV、跟踪申请进度。适合当下被 AI 转型焦虑裹挟、想换方向的工程师。从赞助商（Sponsor）标签看，作者已经在做商业化尝试。"
+    },
+    {
+      "rank": 6,
+      "name": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors.",
+      "language": "Rust",
+      "delta": "",
+      "tags": [
+        "AI记忆",
+        "Agent基建",
+        "Rust",
+        "ClaudeCode",
+        "跨CLI"
+      ],
+      "comment": "Akita（巴西 Ruby/Rails 大神）下场做 AI Agent 基建了。这套方案解决一个真实痛点：Claude Code / Cursor / Codex 各家 Agent 互不联通、记忆断层。ai-memory 提供统一的长期记忆层，让不同 CLI 之间能交接上下文。是 Agent 时代\"基础设施\"层的关键拼图。"
+    },
+    {
+      "rank": 7,
+      "name": "AlexsJones/llmfit",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
+      "language": "Rust",
+      "delta": "",
+      "tags": [
+        "LLM选型",
+        "本地推理",
+        "硬件匹配",
+        "Rust",
+        "工具"
+      ],
+      "comment": "一条命令告诉你\"你的显卡能跑哪些 LLM\"。覆盖数百个模型和供应商，能根据显存/算力给出推荐列表。在 ollama / LM Studio 越来越普及的今天，这种\"选型辅助\"工具很受欢迎。本地推理玩家、想用旧显卡跑模型的极客必备。"
+    },
+    {
+      "rank": 8,
+      "name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "817 个结构化网络安全 skills，映射 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS 等 6 大框架，兼容 Claude Code、GitHub Copilot、Cursor 等 20+ 平台。",
+      "language": "Python",
+      "delta": "",
+      "tags": [
+        "AISkills",
+        "网络安全",
+        "MITRE",
+        "合规框架",
+        "Agent"
+      ],
+      "comment": "网络安全的\"Agent Skills 标准化\"代表项目。覆盖 29 个安全域、6 大合规框架，对企业安全团队做 AI 化转型非常友好。延续了过去一周\"Anthropic skills 生态爆发\"的热度——当 Anthropic 官方下场做 skills 标准时，社区已经开始按垂直领域做专精仓库。"
+    },
+    {
+      "rank": 9,
+      "name": "immich-app/immich",
+      "url": "https://github.com/immich-app/immich",
+      "description": "High performance self-hosted photo and video management solution（高性能自托管照片和视频管理方案）。",
+      "language": "TypeScript",
+      "delta": "",
+      "tags": [
+        "自托管",
+        "相册",
+        "NAS",
+        "隐私",
+        "家庭云"
+      ],
+      "comment": "Google Photos 开源替代品的\"事实标准\"。机器学习自动识别人脸/地点/物体，端到端加密，移动端 App 完整。在隐私焦虑和云盘收费的双重夹击下，越来越多人选择自托管相册。111k Star 已经是 GitHub 自托管类项目的顶流，今天回榜说明用户活跃度持续旺盛。"
+    },
+    {
+      "rank": 10,
+      "name": "nautechsystems/nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture（生产级 Rust 原生交易引擎，确定性事件驱动架构）。",
+      "language": "Rust",
+      "delta": "",
+      "tags": [
+        "量化交易",
+        "Rust",
+        "事件驱动",
+        "回测",
+        "低延迟"
+      ],
+      "comment": "Rust 在金融交易领域的标杆项目。\"确定性事件驱动\"是高频/量化交易系统的核心要求，Rust 性能 + 类型安全 + 无 GC 的特性正好契合。日增 120 Star 在硬核金融项目里算高热度，对量化交易员、Rust 系统程序员都有参考价值。"
+    },
+    {
+      "rank": 11,
+      "name": "jundot/omlx",
+      "url": "https://github.com/jundot/omlx",
+      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar（为 Apple Silicon 设计的 LLM 推理服务，支持连续批处理 + SSD 缓存，菜单栏管理）。",
+      "language": "Python",
+      "delta": "",
+      "tags": [
+        "AppleSilicon",
+        "本地推理",
+        "LLM服务",
+        "macOS",
+        "MLX"
+      ],
+      "comment": "Mac 用户做本地 LLM 推理的\"开箱即用\"方案。亮点是 SSD 缓存——大模型权重放 SSD、按需调度到内存，对内存不够的 MacBook 特别友好。配合 macOS 菜单栏的图形化管理，做到了\"装上就能用\"。M 系列 Mac 用户的本地 AI 推理工具箱又多一件利器。"
+    }
+  ]
+}

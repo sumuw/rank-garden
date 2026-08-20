@@ -1,0 +1,266 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-08",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "PrimeIntellect-ai/prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "description": "一个自我进化的 RLM（Recursive Language Model）智能体，专注于编程工作流和长时间自主任务的执行。",
+      "language": "TypeScript",
+      "delta": "+2,293",
+      "tags": [
+        "AI Agent",
+        "RLM",
+        "Autonomous Coding",
+        "TypeScript"
+      ],
+      "comment": "PrimeIntellect 主打\"会自我改进\"的 Agent，连续运行能力是工程化关键。背后团队来自机器学习基础设施方向，技术含量高，适合关注 Agent 长期自治能力的开发者。"
+    },
+    {
+      "rank": 2,
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "\"给真正工程师的技能\"，直接来自作者 .agents 目录的实战经验沉淀。",
+      "language": "Shell",
+      "delta": "+2,152",
+      "tags": [
+        "AI Agent",
+        "Engineering Skills",
+        "Best Practices",
+        "Shell"
+      ],
+      "comment": "Matt Pocock 出品，质量稳定可靠。内容偏实战工作流而非概念演示，适合作为团队沉淀 AI 编码规范、Code Review 提示词的事实起点。"
+    },
+    {
+      "rank": 3,
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "description": "面向 AI 编程 Agent 的生产级工程技能合集。",
+      "language": "JavaScript",
+      "delta": "+1,131",
+      "tags": [
+        "AI Coding Agent",
+        "Engineering Skills",
+        "Production",
+        "JavaScript"
+      ],
+      "comment": "Chrome 团队成员 Addy Osmani 的项目，强调\"production-grade\"。在大量 Agent 技能仓库中属于体系化程度较高的一档，入门生产化 AI 编码的优秀参考。"
+    },
+    {
+      "rank": 4,
+      "name": "cloudflare/computer",
+      "url": "https://github.com/cloudflare/computer",
+      "description": "给你的 Agent 一台\"电脑\"，让 Agent 在受控沙箱环境中执行任务。",
+      "language": "TypeScript",
+      "delta": "+872",
+      "tags": [
+        "Computer Use",
+        "AI Agent",
+        "Cloudflare",
+        "TypeScript"
+      ],
+      "comment": "连续两天蝉联热榜，Cloudflare 把边缘网络与沙箱能力结合到 Agent 场景，关键是延迟、成本与隔离性的三角平衡，值得关注其与传统 VNC/Playwright 方案的差异。"
+    },
+    {
+      "rank": 5,
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "一个 Agentic 技能框架与软件开发方法论，主打\"真正可用\"。",
+      "language": "Shell",
+      "delta": "+782",
+      "tags": [
+        "AI Agent",
+        "Methodology",
+        "Engineering Skills",
+        "Shell"
+      ],
+      "comment": "方法论驱动型项目，注重工程落地而非演示。当 Agent 编码进入生产环节，会越来越需要这样的\"软基建\"。"
+    },
+    {
+      "rank": 6,
+      "name": "goauthentik/authentik",
+      "url": "https://github.com/goauthentik/authentik",
+      "description": "身份认证的\"粘合层\"，提供统一的 SSO、用户目录和授权能力。",
+      "language": "Python",
+      "delta": "+530",
+      "tags": [
+        "Authentication",
+        "IAM",
+        "SSO",
+        "Python"
+      ],
+      "comment": "成熟的开源身份平台，仍保持稳定增长。适合需要替代 Auth0/Okta 等商业 IAM 的自建团队，长期可作为企业内统一身份基础设施。"
+    },
+    {
+      "rank": 7,
+      "name": "denoland/celld",
+      "url": "https://github.com/denoland/celld",
+      "description": "自托管、分布式的 Durable Objects 运行时。",
+      "language": "Rust",
+      "delta": "+516",
+      "tags": [
+        "Durable Objects",
+        "Distributed Systems",
+        "Self-Hosted",
+        "Rust"
+      ],
+      "comment": "Deno 团队新作，对标 Cloudflare Durable Objects 的开源实现。Rust 写底层保障了执行效率，适合有状态边缘计算场景的研究者。"
+    },
+    {
+      "rank": 8,
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "description": "AutoGPT 的愿景是让每个人都能使用和构建 AI，提供工具让人专注于真正重要的事情。",
+      "language": "Python",
+      "delta": "+355",
+      "tags": [
+        "AI Agent",
+        "Autonomous AI",
+        "Open Source",
+        "Python"
+      ],
+      "comment": "Agent 领域的开源元老，每日仍有不少 Star 流。社区生态完整，新人入门 Agent 可从项目结构开始阅读，但生产侧更建议关注围绕它的子项目。"
+    },
+    {
+      "rank": 9,
+      "name": "google/skills",
+      "url": "https://github.com/google/skills",
+      "description": "Google 自家的 Agent Skills 集合，覆盖其产品和相关技术栈。",
+      "language": "Python",
+      "delta": "+327",
+      "tags": [
+        "AI Agent",
+        "Agent Skills",
+        "Google",
+        "Python"
+      ],
+      "comment": "Google 官方加入\"Skills\"赛道，意味着 Agent 技能规范正在被各家头部收敛。后续关注点在于各家的 Skills 是会走向标准统一，还是各自封闭。"
+    },
+    {
+      "rank": 10,
+      "name": "pranshuparmar/witr",
+      "url": "https://github.com/pranshuparmar/witr",
+      "description": "\"Why is this running?\"——回溯任意进程、端口、容器或文件最初为何启动，提供 CLI + TUI。",
+      "language": "Go",
+      "delta": "+234",
+      "tags": [
+        "CLI",
+        "TUI",
+        "DevOps",
+        "Go",
+        "ps/lsof"
+      ],
+      "comment": "Linux/macOS 下排障的轻量小工具，TUI 友好，可作为 ps/lsof 体系的现代化补充。注意进程追踪需要权限，开箱前留意权限要求。"
+    },
+    {
+      "rank": 11,
+      "name": "google/guava",
+      "url": "https://github.com/google/guava",
+      "description": "Google 的 Java 核心库，集合、缓存、并发、字符串处理等常用工具集。",
+      "language": "Java",
+      "delta": "+152",
+      "tags": [
+        "Java",
+        "Core Libraries",
+        "Utilities",
+        "Google"
+      ],
+      "comment": "Java 工程界的基础设施库，每天的增长来自基数效应。Java 团队学习与生产仍必备，但单纯追新意义不大。"
+    },
+    {
+      "rank": 12,
+      "name": "666ghj/MiroFish",
+      "url": "https://github.com/666ghj/MiroFish",
+      "description": "一个简洁通用的群体智能引擎，号称\"预测万物\"。",
+      "language": "Python",
+      "delta": "+141",
+      "tags": [
+        "Swarm Intelligence",
+        "Prediction",
+        "Simulation",
+        "Python"
+      ],
+      "comment": "中文社区贡献的群体智能项目，README 描述非常宏大。实际能落地的预测场景与效果需要看 demo 与论文支撑，整体偏前沿实验。"
+    },
+    {
+      "rank": 13,
+      "name": "jdx/mise",
+      "url": "https://github.com/jdx/mise",
+      "description": "开发工具、环境变量与任务运行器，前 asdf 生态延伸。",
+      "language": "Rust",
+      "delta": "+135",
+      "tags": [
+        "Dev Tools",
+        "Env Manager",
+        "Task Runner",
+        "Rust"
+      ],
+      "comment": "现代版的 asdf，速度比其更快，配置更直观。如果团队需要管理多语言版本（Node/Python/Ruby/Go…）和任务脚本，mise 是当前口碑较好的选择。"
+    },
+    {
+      "rank": 14,
+      "name": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "description": "面向\"上下文与可问责 AI 系统\"的图原生基础设施。",
+      "language": "Python",
+      "delta": "+122",
+      "tags": [
+        "Knowledge Graph",
+        "Context Engine",
+        "AI Infra",
+        "Python"
+      ],
+      "comment": "Graph + AI 的方向，主打用知识图谱增强 LLM 的上下文质量。适合在 RAG 基础上做结构化增强的场景，关注其图谱 schema 与接入门槛。"
+    },
+    {
+      "rank": 15,
+      "name": "K2SOsint/Legendary_OSINT",
+      "url": "https://github.com/K2SOsint/Legendary_OSINT",
+      "description": "面向欺诈调查、CTI 分析、KYC/AML 等方向的开源 OSINT 工具与资源汇总清单。",
+      "language": "—（未在榜单标注）",
+      "delta": "+109",
+      "tags": [
+        "OSINT",
+        "Cybersecurity",
+        "Resource List",
+        "Investigation"
+      ],
+      "comment": "常见的\"awesome-*\"合集类仓库，结构化整理国内外 OSINT 工具与数据源。注意其中工具的合法合规边界，仅用于授权场景。"
+    },
+    {
+      "rank": 16,
+      "name": "unclebob/swarm-forge",
+      "url": "https://github.com/unclebob/swarm-forge",
+      "description": "一个用于协调多个 AI Agent 的简洁工具。",
+      "language": "Clojure",
+      "delta": "+81",
+      "tags": [
+        "Multi-Agent",
+        "Coordination",
+        "AI Tools",
+        "Clojure"
+      ],
+      "comment": "Robert C. Martin（Uncle Bob）下场做 Agent 编排值得关注，亮点在于\"简洁\"哲学。Clojure 选用偏小众，看核心抽象是否值得被复刻到更主流语言。"
+    },
+    {
+      "rank": 17,
+      "name": "chenyme/grok2api",
+      "url": "https://github.com/chenyme/grok2api",
+      "description": "面向 Grok Build、Grok Web 与 Grok Console 的多账号 API 网关。",
+      "language": "Go",
+      "delta": "+55",
+      "tags": [
+        "API Gateway",
+        "Grok",
+        "Multi-Account",
+        "Go",
+        "prime-agent"
+      ],
+      "comment": "通过统一网关屏蔽多账号调用细节，方便集成。但需关注 xAI 的 ToS 与账号稳定性风险，生产环境慎用。"
+    }
+  ]
+}

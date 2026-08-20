@@ -1,0 +1,281 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-13",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "为 Claude Code 设计的 29 种编辑级图表演型，采用自包含的 HTML + SVG 实现。不依赖阴影效果，不使用 Mermaid 风格的粗糙输出，追求出版级视觉品质。",
+      "language": "HTML",
+      "delta": "+2,855",
+      "tags": [
+        "Claude-Code",
+        "图表设计",
+        "SVG",
+        "可视化",
+        "出版级"
+      ],
+      "comment": "今日以 +2,855 强势空降榜首，这也是本周日增 Star 最高的项目。它精准抓住了 AI 编码助手生成图表质量低下的痛点——Claude Code 能写代码但生成的图表往往丑陋粗糙。diagram-design 提供了 29 种精心设计的图表演型，用纯 HTML+SVG 实现，无需额外依赖。在 AI 编码工具追求\"能跑就行\"的当下，这个项目把\"视觉品质\"重新拉回了讨论中心。"
+    },
+    {
+      "rank": 2,
+      "name": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "一个完整的 AI Agent 代理集合——从前端魔法师到 Reddit 社区忍者，从创意注入器到现实检查员。每个 Agent 都是拥有独特个性、流程和交付物的专业化专家。",
+      "language": "Shell",
+      "delta": "+1,873",
+      "tags": [
+        "AI-Agent",
+        "多角色协作",
+        "Shell脚本",
+        "工作流自动化",
+        "创意工具"
+      ],
+      "comment": "连续多日上榜，今日 +1,873 较昨日 +958 翻倍增长，排名从第二升至第二（实际稳固）。增速反弹说明社区对\"Agent 即角色\"理念的认可持续升温。用 Shell 脚本实现轻量化的多 Agent 编排，无需复杂框架即可快速搭建自动化工作流，这种\"够用就好\"的设计哲学反而比重型框架更受开发者欢迎。"
+    },
+    {
+      "rank": 3,
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca 是一个用于管理并行 Agent 舰队的 ADE（Agent Development Environment）。支持在任何编码 Agent 上使用自己的订阅，桌面端、移动端和 VPS 均可运行。",
+      "language": "TypeScript",
+      "delta": "+1,235",
+      "tags": [
+        "Agent管理",
+        "并行计算",
+        "开发环境",
+        "跨平台",
+        "TypeScript"
+      ],
+      "comment": "昨日新上榜后今日持续攀升，+1,235 较昨日 +875 增长 41%。随着开发者同时运行多个 AI Agent 成为常态，\"Agent 舰队管理\"正从概念变成刚需。Orca 的核心卖点在于\"用自有订阅运行任意编码 Agent\"——不绑定特定模型供应商，让开发者在多 Agent 并发场景下保持灵活性和成本可控。"
+    },
+    {
+      "rank": 4,
+      "name": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "description": "面向上下文管理和可问责 AI 系统的图原生基础设施（Graph-Native Infrastructure）。通过知识图谱为 AI 提供结构化的上下文追踪和责任归属能力。",
+      "language": "Python",
+      "delta": "+845",
+      "tags": [
+        "知识图谱",
+        "AI基础设施",
+        "上下文管理",
+        "可问责AI",
+        "Python"
+      ],
+      "comment": "连续第四天上榜，+845 与昨日 +893 基本持平，稳居第四。\"图原生\"正在从新概念变为被广泛认可的 AI 基础设施范式——不仅管理\"AI 知道什么\"，还追踪\"AI 为什么这么做\"。在 Agent 自主性越来越强的今天，可问责性（Accountability）将成为合规和信任的基石。"
+    },
+    {
+      "rank": 5,
+      "name": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "开源的工作场所 Agent 管理应用，帮助团队统一管理和编排各类 AI Agent，是工作中管理 Agent 的通用工具。",
+      "language": "TypeScript",
+      "delta": "+571",
+      "tags": [
+        "Agent管理",
+        "企业工具",
+        "开源",
+        "工作流编排",
+        "TypeScript"
+      ],
+      "comment": "连续多日上榜，+571 较昨日 +748 有所回落但仍稳健。paperclip 与 Orca 形成\"企业级 vs 个人级\"的互补——paperclip 更侧重团队协作和集中管控，Orca 更侧重个人开发者的并行 Agent 编排。两者同时持续上榜说明 Agent 管理赛道的市场需求是多层次的。"
+    },
+    {
+      "rank": 6,
+      "name": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI 将文档或主题转化为真正的原生 PowerPoint 演示文稿——支持原生形状、过渡动画、数据驱动的图表和表格、来自演讲者备注的语音旁白，并支持自定义 .pptx 模板。",
+      "language": "Python",
+      "delta": "+476",
+      "tags": [
+        "AI-PPT",
+        "办公自动化",
+        "演示文稿",
+        "Python",
+        "生产力工具"
+      ],
+      "comment": "今日新上榜，+476 冲到第六位。市面上\"AI 生成 PPT\"工具不少，但大多生成的是图片或简化版幻灯片。ppt-master 的差异化在于\"原生\"——生成的是真正的 .pptx 文件，包含原生形状、动画过渡、数据图表，甚至语音旁白。对需要频繁制作专业演示文稿的职场人士来说，这是目前最接近\"AI 全自动出 PPT\"的开源方案。"
+    },
+    {
+      "rank": 7,
+      "name": "NVIDIA-NeMo/Switchyard",
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "description": "NVIDIA 出品的 LLM 流量路由代理和库。在 OpenAI Chat、Anthropic Messages 和 OpenAI Responses 三种 API 格式之间互转，让编码 Agent（如 Claude Code、Codex）能够无缝接入开源模型后端（vLLM、NVIDIA NIM、Ollama 等），并提供智能多后端路由和 Prometheus 运维指标。",
+      "language": "Rust",
+      "delta": "+421",
+      "tags": [
+        "NVIDIA",
+        "LLM路由",
+        "API网关",
+        "Rust",
+        "开源模型"
+      ],
+      "comment": "今日新上榜，+421 位居第七。NVIDIA 官方出手，瞄准的是一个非常实际的痛点：编码 Agent 默认绑定特定 API 格式（Claude 用 Anthropic 格式、Codex 用 OpenAI 格式），想换成开源模型就得做协议转换。Switchyard 用 Rust 实现高性能代理层，不仅做格式转换，还提供智能路由（LLM 分类器、阶段路由器、升级路由器等），让弱模型处理简单请求、强模型处理复杂请求，兼顾成本和质量。目前处于 pre-alpha 阶段，但方向极具前瞻性。"
+    },
+    {
+      "rank": 8,
+      "name": "cactus-compute/needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "description": "仅 14MB 的基础模型，专为微型设备设计——手机、可穿戴设备、智能家居和机器人。",
+      "language": "Python",
+      "delta": "+315",
+      "tags": [
+        "边缘AI",
+        "小模型",
+        "端侧推理",
+        "IoT",
+        "Python"
+      ],
+      "comment": "今日新上榜，+315 Star。在\"参数越大越好\"的主流叙事下，needle 走了一条反路线——14MB 的基础模型，目标是在手机、智能手表甚至 IoT 设备上本地运行。这不是要替代 GPT-4，而是解决\"无网络/低延迟/隐私优先\"场景下的 AI 能力问题。随着端侧 AI 需求增长，\"小而美\"的模型方向值得关注。"
+    },
+    {
+      "rank": 9,
+      "name": "shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos——金融市场语言的基础模型（Foundation Model）。将金融市场数据视为一种\"语言\"，用基础模型的方法来理解和预测市场走势。",
+      "language": "Python",
+      "delta": "+266",
+      "tags": [
+        "金融AI",
+        "基础模型",
+        "市场预测",
+        "量化交易",
+        "Python"
+      ],
+      "comment": "今日新上榜，+266 Star。将基础模型（Foundation Model）范式引入金融领域是一个大胆尝试——不是训练一个股票预测模型，而是训练一个理解\"金融市场语言\"的通用模型，类似 GPT 之于自然语言。如果这个方向成立，意味着金融 AI 可能从\"一个场景一个模型\"走向\"一个模型适配多场景\"。当然，金融市场的噪声和非平稳性远超自然语言，挑战不小。"
+    },
+    {
+      "rank": 10,
+      "name": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "description": "Macro 是面向团队的统一工作空间——邮件、聊天、文档、任务、Agent、通话和 CRM 通过 @ 关联整合在一起，共享 AI 记忆。",
+      "language": "Rust",
+      "delta": "+227",
+      "tags": [
+        "团队协作",
+        "统一工作空间",
+        "Rust",
+        "AI记忆",
+        "CRM"
+      ],
+      "comment": "今日新上榜，+227 Star。在 Notion、Slack、Linear 等垂直工具各自为政的当下，Macro 试图用\"统一工作空间 + 共享 AI 记忆\"重新定义团队协作。用 Rust 构建意味着对性能和可靠性的追求。@ 关联机制让跨模块引用变得自然，共享 AI 记忆则让 Agent 能跨场景理解上下文。这是一个野心很大的项目，能否挑战现有工具矩阵还有待观察。"
+    },
+    {
+      "rank": 11,
+      "name": "NanmiCoder/MediaCrawler",
+      "url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "多平台社交媒体爬虫工具，支持小红书笔记/评论、抖音视频/评论、快手视频/评论、B站视频/评论、微博帖子/评论、百度贴吧帖子/评论回复、知乎问答文章/评论的数据采集。",
+      "language": "Python",
+      "delta": "+215",
+      "tags": [
+        "爬虫",
+        "社交媒体",
+        "数据采集",
+        "中文平台",
+        "Python"
+      ],
+      "comment": "今日回归热榜，+215 Star。作为中文开发者社区中最知名的多平台爬虫工具，MediaCrawler 几乎覆盖了所有主流中文社交平台。它的持续上榜反映了数据采集和分析在中文互联网生态中的旺盛需求。不过需注意，使用爬虫工具时应遵守各平台的使用条款和相关法律法规。"
+    },
+    {
+      "rank": 12,
+      "name": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "开源的跨平台 AirDrop 替代方案。无需网络连接，通过局域网直接在设备间传输文件。",
+      "language": "Dart",
+      "delta": "+213",
+      "tags": [
+        "跨平台",
+        "文件传输",
+        "AirDrop替代",
+        "开源",
+        "Dart"
+      ],
+      "comment": "今日回归热榜，+213 Star。localsend 是跨平台文件传输领域的事实标杆——Windows、Linux、macOS、iOS、Android 全平台覆盖，无需注册账号，无需网络连接，开箱即用。在 AirDrop 只限苹果生态的背景下，localsend 填补了跨平台局域网文件传输的空白。用 Dart/Flutter 开发也保证了真正的跨平台一致性。"
+    },
+    {
+      "rank": 13,
+      "name": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow 是领先的开源检索增强生成（RAG）引擎，将前沿 RAG 与 Agent 能力融合，为 LLM 创建卓越的上下文层。",
+      "language": "Go",
+      "delta": "+139",
+      "tags": [
+        "RAG",
+        "检索增强",
+        "Agent",
+        "开源引擎",
+        "Go"
+      ],
+      "comment": "今日回归热榜，+139 Star。RAGFlow 在 RAG 领域的定位类似于 LangChain 在 Agent 框架领域的定位——它不只是一个工具库，而是一个完整的 RAG 引擎平台。将 RAG 与 Agent 能力融合是当前的趋势：RAG 负责精准检索，Agent 负责推理编排，两者结合才能构建真正可用的企业级 AI 应用。用 Go 实现也保证了高并发场景下的性能。"
+    },
+    {
+      "rank": 14,
+      "name": "ZuodaoTech/everyone-can-use-english",
+      "url": "https://github.com/ZuodaoTech/everyone-can-use-english",
+      "description": "人人都能用英语——面向中文用户的英语学习工具，旨在帮助所有人提升英语实际使用能力。",
+      "language": "TypeScript",
+      "delta": "+86",
+      "tags": [
+        "英语学习",
+        "中文用户",
+        "教育工具",
+        "TypeScript",
+        "语言学习"
+      ],
+      "comment": "今日新上榜，+86 Star。这是一个面向中文母语者的英语学习开源项目，名字本身就传达了\"降低英语使用门槛\"的理念。在 AI 时代，英语能力的重要性不仅没有下降反而上升——最前沿的技术文档、论文和社区讨论大多以英语进行。一个帮助中文用户跨越语言障碍的开源工具，具有实际的普惠价值。"
+    },
+    {
+      "rank": 15,
+      "name": "smicallef/spiderfoot",
+      "url": "https://github.com/smicallef/spiderfoot",
+      "description": "SpiderFoot 自动化 OSINT（开源情报）收集，用于威胁情报和攻击面映射。自动从上百个数据源收集、关联和分析目标信息。",
+      "language": "Python",
+      "delta": "+74",
+      "tags": [
+        "OSINT",
+        "安全工具",
+        "威胁情报",
+        "攻击面映射",
+        "Python"
+      ],
+      "comment": "今日新上榜，+74 Star。SpiderFoot 是 OSINT 领域的老牌工具，自动化地从公开数据源中收集和关联情报，广泛用于安全研究和威胁分析。在网络安全形势日益复杂的背景下，攻击面管理（ASM）成为企业安全建设的重要环节。SpiderFoot 上榜说明社区对安全工具的关注度在提升。"
+    },
+    {
+      "rank": 16,
+      "name": "Lightricks/LTX-2",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "description": "LTX-2 音频-视频生成模型的官方 Python 推理和 LoRA 训练包。支持音视频联合生成和 LoRA 微调。",
+      "language": "Python",
+      "delta": "+65",
+      "tags": [
+        "视频生成",
+        "音频生成",
+        "LoRA",
+        "多模态",
+        "Python"
+      ],
+      "comment": "今日新上榜，+65 Star。Lightricks（Facetune 背后的公司）推出的 LTX-2 是音视频联合生成领域的新选手。与纯视频生成模型不同，LTX-2 同时生成音频和视频，更接近\"完整多媒体内容生成\"的目标。提供官方 LoRA 训练支持意味着用户可以用自己的数据微调模型，这对于创意工作流来说非常实用。"
+    },
+    {
+      "rank": 17,
+      "name": "embabel/embabel-agent",
+      "url": "https://github.com/embabel/embabel-agent",
+      "description": "面向 JVM 的 Agent 框架。为 Java/Kotlin 生态提供 AI Agent 开发能力，发音为 Em-BAY-bel。",
+      "language": "Kotlin",
+      "delta": "+40",
+      "tags": [
+        "Agent框架",
+        "JVM",
+        "Kotlin",
+        "Java生态",
+        "企业级"
+      ],
+      "comment": "今日新上榜，+40 Star。在 Agent 框架几乎被 Python（LangChain、AutoGPT）和 TypeScript 生态主导的当下，embabel-agent 为 JVM 生态提供了一个原生选择。对于大量使用 Java/Kotlin 的企业来说，无需跨语言调用就能在现有技术栈中集成 Agent 能力，这降低了企业级 AI 落地的门槛。Kotlin 的简洁语法也更适合表达 Agent 的业务逻辑。"
+    }
+  ]
+}

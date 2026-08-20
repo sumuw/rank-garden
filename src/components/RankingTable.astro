@@ -7,6 +7,8 @@ export interface RankingItem {
   language?: string;
   stars?: number;
   delta?: string;
+  tags?: string[];
+  comment?: string;
 }
 
 interface Props {
@@ -27,6 +29,7 @@ const numberFormat = new Intl.NumberFormat("en-US");
         <th scope="col">语言</th>
         <th scope="col">星标</th>
         <th scope="col">变化</th>
+        <th scope="col">标签与简评</th>
       </tr>
     </thead>
     <tbody>
@@ -43,6 +46,18 @@ const numberFormat = new Intl.NumberFormat("en-US");
             <td>{item.language || "Unknown"}</td>
             <td>{typeof item.stars === "number" ? numberFormat.format(item.stars) : "-"}</td>
             <td class="delta">{item.delta || "-"}</td>
+            <td class="comment-cell">
+              {
+                item.tags?.length ? (
+                  <div class="tag-row">
+                    {item.tags.map((tag) => (
+                      <span>{tag}</span>
+                    ))}
+                  </div>
+                ) : null
+              }
+              {item.comment ? <p>{item.comment}</p> : <p>暂无简评。</p>}
+            </td>
           </tr>
         ))
       }
@@ -61,7 +76,7 @@ const numberFormat = new Intl.NumberFormat("en-US");
 
   .ranking-table {
     width: 100%;
-    min-width: 720px;
+    min-width: 960px;
     border-collapse: collapse;
   }
 
@@ -111,6 +126,30 @@ const numberFormat = new Intl.NumberFormat("en-US");
   .delta {
     color: var(--green);
     font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .comment-cell {
+    max-width: 340px;
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .tag-row span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.45rem;
+    padding: 0 0.45rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--blue);
+    background: var(--surface-muted);
+    font-size: 0.76rem;
     white-space: nowrap;
   }
 </style>

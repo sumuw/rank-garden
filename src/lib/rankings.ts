@@ -14,6 +14,8 @@ export interface RankingItem {
   language?: string;
   stars?: number;
   delta?: string;
+  tags?: string[];
+  comment?: string;
 }
 
 export interface RankingData {
@@ -21,6 +23,7 @@ export interface RankingData {
   period: RankingPeriod;
   date: string;
   source: string;
+  sourceUrl?: string;
   items: RankingItem[];
 }
 
@@ -40,6 +43,12 @@ export const periodLabels: Record<RankingPeriod, string> = {
 
 const baseUrl = import.meta.env.BASE_URL;
 
+function withBasePath(pathname: string) {
+  const base = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
+  const path = pathname.startsWith("/") ? pathname.slice(1) : pathname;
+  return `${base}${path}`;
+}
+
 export async function getAllRankingPosts() {
   const posts = await getCollection("rankings");
   return posts.sort((a, b) => b.data.date.localeCompare(a.data.date));
@@ -57,9 +66,9 @@ export async function loadRankingData(dataFile: string): Promise<RankingData> {
 }
 
 export function getPostUrl(post: CollectionEntry<"rankings">) {
-  return `${baseUrl}rankings/${post.id}/`;
+  return withBasePath(`rankings/${post.id}/`);
 }
 
 export function getCategoryUrl(category: RankingCategory) {
-  return `${baseUrl}categories/${category}/`;
+  return withBasePath(`categories/${category}/`);
 }

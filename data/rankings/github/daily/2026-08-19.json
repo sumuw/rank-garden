@@ -1,0 +1,209 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-19",
+  "source": "github-trending",
+  "sourceUrl": "https://github.com/trending?since=daily",
+  "items": [
+    {
+      "rank": 1,
+      "name": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。",
+      "language": "Python",
+      "stars": 109001,
+      "delta": "+2,304",
+      "tags": [
+        "AI视频生成",
+        "短视频自动化",
+        "LLM工作流",
+        "自媒体"
+      ],
+      "comment": "连续多日霸榜，单日+2,304 为近期峰值。一句话生成短视频这个切入点完美击中自媒体痛点，配合抖音/视频号等平台的二次创作场景，成为\"AI+内容工厂\"事实标准。10 万星达成热度仍未见衰减，是 2026 年最具代表性的\"产品化 AI 工具\"项目。"
+    },
+    {
+      "rank": 2,
+      "name": "public-apis/public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "description": "免费的 API 合集（一个聚合了上千个免费 API 的列表项目）。",
+      "language": "Python",
+      "stars": 464933,
+      "delta": "+1,005",
+      "tags": [
+        "API合集",
+        "AwesomeList",
+        "开发者工具",
+        "基础设施"
+      ],
+      "comment": "4.6 万星的\"老兵\"重新回榜。在 LLM/Agent 时代，\"发现 API\"成为 Agent 能力扩展的瓶颈，这个列表的本质价值被重新放大。单日+1,005 显示：Awesome List 不是历史的残骸，而是 Agent 时代的基础设施入口。"
+    },
+    {
+      "rank": 3,
+      "name": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "description": "为 AI Agent 准备 817 个结构化网络安全技能，覆盖 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF、MITRE F3 共 6 大框架，兼容 20+ Agent 平台。",
+      "language": "Python",
+      "stars": 29363,
+      "delta": "+730",
+      "tags": [
+        "AI安全",
+        "AgentSkills",
+        "MITRE",
+        "网络安全",
+        "合规框架"
+      ],
+      "comment": "Agent Skills 标准化赛道当下最垂直的一击。\"垂直领域 × 标准化框架 × 跨平台兼容\"三件套全部命中。817 个技能 + 6 大框架映射明显是为企业安全团队量身定做，Apache 2.0 协议对企业友好。Anthropic 官方下场搞 skills 标准化后，社区正在快速把每个垂直领域用 skills 重写一遍。"
+    },
+    {
+      "rank": 4,
+      "name": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "为 Agent 编码 CLI 提供长期记忆解决方案，并支持不同 Agent 厂商之间的上下文交接。",
+      "language": "Rust",
+      "stars": 2892,
+      "delta": "+648",
+      "tags": [
+        "Agent记忆",
+        "Rust",
+        "多Agent协作",
+        "上下文管理",
+        "CLI工具"
+      ],
+      "comment": "日增从昨日 +207 飙升至 +648，热度爆发型项目。akitaonrails 本人下场，专治 Agent 的\"金鱼记忆\"痛点。用 Rust 写说明不妥协性能，面向跨厂商 Agent 上下文搬运，定位直击 Cursor/Claude Code/Copilot 用户的最大槽点。新星项目（仅 2.8K）但日增速已达一线水平。"
+    },
+    {
+      "rank": 5,
+      "name": "agalwood/Motrix",
+      "url": "https://github.com/agalwood/Motrix",
+      "description": "一款功能全面的下载管理器，支持 HTTP、FTP、BT、磁力链等多种协议。",
+      "language": "TypeScript",
+      "stars": 53832,
+      "delta": "+609",
+      "tags": [
+        "下载工具",
+        "桌面应用",
+        "Electron",
+        "BT磁力链"
+      ],
+      "comment": "5.3 万星的老牌下载工具，单日+609 稳居榜单。常年上榜说明\"基础工具\"的护城河之深。在浏览器自带下载越来越难用的当下，多协议整合+界面清爽的桌面下载器仍是硬需求。证明非 AI 项目在 GitHub 依然有稳定曝光位。"
+    },
+    {
+      "rank": 6,
+      "name": "genlayerlabs/genlayer-project-boilerplate",
+      "url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
+      "description": "GenLayer 项目模板。GenLayer 是一个支持链上 AI 推理与共识的智能合约网络。",
+      "language": "TypeScript",
+      "stars": 16040,
+      "delta": "+535",
+      "tags": [
+        "区块链",
+        "智能合约",
+        "链上AI",
+        "项目模板"
+      ],
+      "comment": "单日+535 的纯空降项目。GenLayer 把\"AI 推理 + 区块链共识\"作为差异化卖点，本质是想做\"AI 智能体之间可以无信任协作的网络\"。模板本身没多少代码量，但作为开发者入口战略意义重要——AI Agent 时代需要\"Agent 原生经济层\"，这条赛道不容忽视。"
+    },
+    {
+      "rank": 7,
+      "name": "jundot/omlx",
+      "url": "https://github.com/jundot/omlx",
+      "description": "面向 Apple Silicon 的 LLM 推理服务器，支持连续批处理与 SSD 缓存，可通过 macOS 菜单栏管理。",
+      "language": "Python",
+      "stars": 19521,
+      "delta": "+370",
+      "tags": [
+        "LLM推理",
+        "AppleSilicon",
+        "本地大模型",
+        "macOS",
+        "边缘AI"
+      ],
+      "comment": "本地推理赛道近期代表作。把\"Mac 跑大模型\"做成开箱即用的服务，菜单栏管理是典型的 Mac-first 设计哲学。SSD 缓存是续航/性能平衡的关键工程细节——把常驻模型放在 SSD 而不是内存，是 Mac 用户最缺的一环。"
+    },
+    {
+      "rank": 8,
+      "name": "basecamp/omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "description": "Basecamp 官方推出的\"漂亮、现代、强观点\"的 Linux 发行版。",
+      "language": "Shell",
+      "stars": 26528,
+      "delta": "+356",
+      "tags": [
+        "Linux发行版",
+        "DHH",
+        "Basecamp",
+        "桌面系统",
+        "极简"
+      ],
+      "comment": "DHH（Basecamp/HEY/Ruby on Rails 之父）亲自下场搞 Linux 发行版，开源社区天天吵的\"最美 Linux 桌面接龙\"终于有人交卷。\"Opinionated\"是 DHH 一贯的旗帜——不给你选项，给你结论。脚本驱动不是普通 GNU 包，是带强主张的成品。"
+    },
+    {
+      "rank": 9,
+      "name": "chaitanyagiri/munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "description": "本地多 Agent 编排框架（local multi-agent harness）。",
+      "language": "TypeScript",
+      "stars": 2232,
+      "delta": "+306",
+      "tags": [
+        "多Agent",
+        "本地化",
+        "Agent编排",
+        "TypeScript",
+        "黑马项目"
+      ],
+      "comment": "新晋黑马，2.2K 星项目单日 +306。Harness = 缰绳，本质是给\"野生 Agent\"套上治理框架。本地化运行对应了\"数据不出本机\"的合规焦虑——\"本地多 Agent\" 正在成为隐私敏感型场景（医疗/法务/金融）的默认选项。"
+    },
+    {
+      "rank": 10,
+      "name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "description": "字节跳动开源的自演进上下文数据库，统一管理 Agent 记忆、知识 RAG 与技能。",
+      "language": "Python",
+      "stars": 29614,
+      "delta": "+213",
+      "tags": [
+        "字节跳动",
+        "AI基础设施",
+        "Agent记忆",
+        "RAG",
+        "Skills"
+      ],
+      "comment": "字节正式入场 Agent 基础设施赛道。OpenViking 把\"记忆 + RAG + 技能\"三件套封装成一个统一数据库，是想重做\"Agent 时代的数据层\"。能上日榜说明国内大厂对 Agent 基建层的关注已经形成风潮，单日 +213 反而低于预期（昨日冲榜），可能进入\"沉淀期\"。"
+    },
+    {
+      "rank": 11,
+      "name": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "description": "开源版的 CapCut（剪映国际版）替代品。",
+      "language": "TypeScript",
+      "stars": 84938,
+      "delta": "+192",
+      "tags": [
+        "视频剪辑",
+        "CapCut替代",
+        "开源工具",
+        "Electron",
+        "创作者工具"
+      ],
+      "comment": "8.4 万星创作者工具。开源剪映这条赛道一直被期待，OpenCut 长期霸榜创作者工具前列。剪映商业版功能丰富但本地隐私让人顾虑——OpenCut 是少数能本地剪辑、跨平台、还不收订阅费的方案。当下 +192 进入榜单中后段，是经典\"稳态增长\"型项目。"
+    },
+    {
+      "rank": 12,
+      "name": "NawfalMotii79/PLFM_RADAR",
+      "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
+      "description": "开源的低成本 10.5 GHz PLFM 相控阵雷达系统。",
+      "language": "PLSQL",
+      "stars": 24396,
+      "delta": "+192",
+      "tags": [
+        "相控阵雷达",
+        "开源硬件",
+        "射频工程",
+        "国防",
+        "PLSQL"
+      ],
+      "comment": "今日榜单的\"异物\"——非 AI、非软件，是一个实打实的开源射频/雷达项目。PLSQL 在 GitHub 上被雷达团队拿来当项目语言标识，更可能是 PL/SQL 的变种（PL/SQL 衍生）。项目把军用级相控阵雷达做到开源低成本，对硬件极客/学习者极其友好；榜单需要这种\"意料之外\"的项目，否则全是 AI 工具会让生态失衡。"
+    }
+  ]
+}
