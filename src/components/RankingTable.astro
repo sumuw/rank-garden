@@ -1,0 +1,116 @@
+---
+export interface RankingItem {
+  rank: number;
+  name: string;
+  url: string;
+  description: string;
+  language?: string;
+  stars?: number;
+  delta?: string;
+}
+
+interface Props {
+  items: RankingItem[];
+}
+
+const { items } = Astro.props;
+const numberFormat = new Intl.NumberFormat("en-US");
+---
+
+<div class="ranking-table-wrap">
+  <table class="ranking-table">
+    <caption>榜单明细</caption>
+    <thead>
+      <tr>
+        <th scope="col">排名</th>
+        <th scope="col">项目</th>
+        <th scope="col">语言</th>
+        <th scope="col">星标</th>
+        <th scope="col">变化</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        items.map((item) => (
+          <tr>
+            <td class="rank">#{item.rank}</td>
+            <td>
+              <a class="project-link" href={item.url} target="_blank" rel="noreferrer">
+                {item.name}
+              </a>
+              <p>{item.description}</p>
+            </td>
+            <td>{item.language || "Unknown"}</td>
+            <td>{typeof item.stars === "number" ? numberFormat.format(item.stars) : "-"}</td>
+            <td class="delta">{item.delta || "-"}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .ranking-table-wrap {
+    overflow-x: auto;
+    margin-top: 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+  }
+
+  .ranking-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+  }
+
+  caption {
+    padding: 1rem 1rem 0;
+    text-align: left;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--muted);
+    background: var(--surface-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .rank {
+    color: var(--amber);
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .project-link {
+    color: var(--blue);
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .delta {
+    color: var(--green);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+</style>

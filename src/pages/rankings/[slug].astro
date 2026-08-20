@@ -1,0 +1,42 @@
+---
+import { render } from "astro:content";
+import RankingTable from "@/components/RankingTable.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import {
+  categoryLabels,
+  getAllRankingPosts,
+  loadRankingData,
+  periodLabels
+} from "@/lib/rankings";
+
+export async function getStaticPaths() {
+  const posts = await getAllRankingPosts();
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const ranking = await loadRankingData(post.data.dataFile);
+---
+
+<BaseLayout title={`${post.data.title} | Ranking Blog`} description={post.data.description}>
+  <article>
+    <p class="eyebrow">Ranking</p>
+    <h1 class="page-title">{post.data.title}</h1>
+    <div class="meta-row">
+      <span class="pill">{categoryLabels[post.data.category]}</span>
+      <span class="pill">{periodLabels[post.data.period]}</span>
+      <span class="pill">{post.data.date}</span>
+      <span class="pill">Source: {ranking.source}</span>
+    </div>
+
+    <section class="content">
+      <Content />
+    </section>
+
+    <RankingTable items={ranking.items} />
+  </article>
+</BaseLayout>

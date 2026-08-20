@@ -1,0 +1,23 @@
+{
+  "name": "ranking-blog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev",
+    "build": "node scripts/astro.mjs check && node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview",
+    "validate:rankings": "node scripts/validate-rankings.mjs",
+    "generate:github": "node scripts/generate-github-ranking.mjs --period daily"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "@astrojs/markdown-remark": "^7.2.3",
+    "astro": "latest",
+    "typescript": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0"
+  }
+}

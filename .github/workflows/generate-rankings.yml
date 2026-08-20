@@ -1,0 +1,25 @@
+name: Generate rankings
+
+on:
+  schedule:
+    - cron: "15 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  github-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/generate-github-ranking.mjs --period daily
+      - run: npm run validate:rankings
+      - uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: "chore: update github daily ranking"

@@ -1,0 +1,121 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import {
+  categoryLabels,
+  getAllRankingPosts,
+  getCategoryUrl,
+  getPostUrl,
+  periodLabels,
+  type RankingCategory
+} from "@/lib/rankings";
+
+const posts = await getAllRankingPosts();
+const latestPosts = posts.slice(0, 5);
+const categories = Array.from(new Set(posts.map((post) => post.data.category))) as RankingCategory[];
+---
+
+<BaseLayout title="Ranking Blog | 每日排行榜内容站">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Ranking Blog</p>
+      <h1 class="page-title">用结构化数据和 AI 解读维护排行榜博客。</h1>
+      <p class="lead">
+        首版聚焦 GitHub 日榜和周榜，后续可扩展到影视、AI 工具和其他主题榜单。
+      </p>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <span style="--height: 42%"></span>
+      <span style="--height: 68%"></span>
+      <span style="--height: 92%"></span>
+      <span style="--height: 55%"></span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">最新榜单</h2>
+    <div class="grid">
+      {
+        latestPosts.map((post) => (
+          <a class="ranking-card" href={getPostUrl(post)}>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="meta-row">
+              <span class="pill">{categoryLabels[post.data.category]}</span>
+              <span class="pill">{periodLabels[post.data.period]}</span>
+              <span class="pill">{post.data.date}</span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">分类</h2>
+    <div class="grid">
+      {
+        categories.map((category) => (
+          <a class="ranking-card" href={getCategoryUrl(category)}>
+            <h3>{categoryLabels[category]}</h3>
+            <p>查看该分类下的所有日榜、周榜和月榜。</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 2rem;
+    align-items: end;
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-visual {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+    gap: 0.75rem;
+    height: 180px;
+    padding: 1rem;
+    background: #111827;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+
+  .hero-visual span {
+    display: block;
+    height: var(--height);
+    border-radius: 6px 6px 2px 2px;
+    background: #38bdf8;
+  }
+
+  .hero-visual span:nth-child(2) {
+    background: #f59e0b;
+  }
+
+  .hero-visual span:nth-child(3) {
+    background: #34d399;
+  }
+
+  .hero-visual span:nth-child(4) {
+    background: #e2e8f0;
+  }
+
+  .section {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+      height: 120px;
+    }
+  }
+</style>

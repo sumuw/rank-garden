@@ -1,0 +1,54 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import {
+  categoryLabels,
+  getAllRankingPosts,
+  getPostUrl,
+  periodLabels,
+  type RankingCategory
+} from "@/lib/rankings";
+
+export async function getStaticPaths() {
+  const posts = await getAllRankingPosts();
+  const categories = Array.from(new Set(posts.map((post) => post.data.category)));
+  return categories.map((category) => ({
+    params: { category },
+    props: { category }
+  }));
+}
+
+const category = Astro.props.category as RankingCategory;
+const posts = await getAllRankingPosts();
+const categoryPosts = posts.filter((post) => post.data.category === category);
+---
+
+<BaseLayout title={`${categoryLabels[category]} 榜单 | Ranking Blog`}>
+  <section>
+    <p class="eyebrow">Category</p>
+    <h1 class="page-title">{categoryLabels[category]} 榜单</h1>
+    <p class="lead">按时间倒序查看该分类下发布的排行榜内容。</p>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      {
+        categoryPosts.map((post) => (
+          <a class="ranking-card" href={getPostUrl(post)}>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="meta-row">
+              <span class="pill">{periodLabels[post.data.period]}</span>
+              <span class="pill">{post.data.date}</span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .section {
+    margin-top: 2rem;
+  }
+</style>
