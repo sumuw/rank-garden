@@ -1,0 +1,35 @@
+{
+  "category": "github",
+  "period": "daily",
+  "date": "2026-08-27",
+  "source": "sample-generator",
+  "items": [
+    {
+      "rank": 1,
+      "name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Command-line coding agent focused on local development workflows.",
+      "language": "Rust",
+      "stars": 45200,
+      "delta": "+1280"
+    },
+    {
+      "rank": 2,
+      "name": "withastro/astro",
+      "url": "https://github.com/withastro/astro",
+      "description": "Web framework for content-driven websites with fast static output.",
+      "language": "TypeScript",
+      "stars": 53100,
+      "delta": "+740"
+    },
+    {
+      "rank": 3,
+      "name": "gohugoio/hugo",
+      "url": "https://github.com/gohugoio/hugo",
+      "description": "Fast static site generator with mature taxonomy support.",
+      "language": "Go",
+      "stars": 82400,
+      "delta": "+410"
+    }
+  ]
+}
